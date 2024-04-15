@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient_background"
+    >
+
+    <Button
+        android:id="@+id/btnVTB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="100dp"
+        android:onClick="onClickVTB"
+        android:text="ВТБ" />
+
+    <Button
+        android:id="@+id/btnSberbank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сбербанк"
+        android:layout_below="@id/btnVTB"
+        android:layout_marginTop="120dp"
+        android:layout_alignParentStart="true"
+        android:onClick="onClickSberbank"/>
+
+    <Button
+        android:id="@+id/btnAlfaBank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Альфа-Банк"
+        android:layout_below="@id/btnSberbank"
+        android:layout_marginTop="120dp"
+        android:layout_alignParentStart="true"
+        android:onClick="onClickAlfaBank"/>
+
+    <TextView
+        android:id="@+id/tvInterestRate_VTB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnVTB"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/tvInterestRate_Sberbank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSberbank"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/tvInterestRate_AlfaBank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAlfaBank"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"/>
+
+
+    <TextView
+        android:id="@+id/tvConfirmation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_below="@id/tvInterestRate_VTB"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"/>
+
+
+</RelativeLayout>

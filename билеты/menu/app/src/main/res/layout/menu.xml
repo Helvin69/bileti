@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/menu_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_menu"
+            android:onClick="toggleMenu" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Выберите пункт меню"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:elevation="4dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/menuItemSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Настройки"
+            android:textSize="18sp"
+            android:onClick="selectMenuItem"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/menuItemOpen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Открыть"
+            android:textSize="18sp"
+            android:onClick="selectMenuItem"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/menuItemSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сохранить"
+            android:textSize="18sp"
+            android:onClick="selectMenuItem"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

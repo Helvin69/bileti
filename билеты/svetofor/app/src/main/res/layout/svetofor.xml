@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/redButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="Красный"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/redColor"
+        android:textColor="@android:color/white"
+        />
+
+    <Button
+        android:id="@+id/yellowButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="Жёлтый"
+        android:layout_below="@id/redButton"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/yellowColor"
+        android:textColor="@android:color/white"
+        />
+
+    <Button
+        android:id="@+id/greenButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="Зелёный"
+        android:layout_below="@id/yellowButton"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/greenColor"
+        android:textColor="@android:color/white"
+        />
+
+
+
+
+
+</RelativeLayout>
